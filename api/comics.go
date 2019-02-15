@@ -26,7 +26,6 @@ func (api *API) GetLatestComic(w http.ResponseWriter, r *http.Request) {
 	}
 	if back != "" {
 		start := newestComic.Number - 1
-		fmt.Println(start)
 		back, _ := strconv.ParseInt(back, 10, 32)
 		end := start - int(back)
 		for i := start; i > end; i-- {
