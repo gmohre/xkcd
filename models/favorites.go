@@ -29,7 +29,6 @@ func (state *FavoriteManager) GetFavorites() *Favorites {
 }
 
 func NewFavoriteManager(db *DB) (*FavoriteManager, error) {
-
 	db.AutoMigrate(&Favorite{})
 	mgr := FavoriteManager{}
 	mgr.db = db
