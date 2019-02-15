@@ -11,6 +11,7 @@ type Comic struct {
 	Year   string `json:"year"`
 	Month  string `json:"month"`
 	Day    string `json:"day"`
+	Alt    string `json:"alt"`
 }
 
 type Comics []Comic
