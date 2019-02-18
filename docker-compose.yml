@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: gmohre/xkcd:latest
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/go/src/github.com/gmohre/xkcd
